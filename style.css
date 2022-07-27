@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#swiggy-logo{
+    height: 50px;
+    margin: auto auto;
+    justify-content: center;
+    
+}
+
+
+header{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbar{
+    justify-content: center;
+    margin: auto 100px;
+}
+.navbar ul{
+    display: flex;
+    /* margin: 40px; */
+}
+.navbar li{
+    list-style: none;
+
+}
+.navbar li a{
+    text-decoration: none;
+    padding: 20px;
+
+}
+.navbutton{
+    color: aliceblue;
+}
+.navbutton:hover{
+    opacity: .8;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+
+header::before{
+    content: "";
+    background-image: url(/imgs/header\ image\ 5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50vh;
+}
+.container{
+    height: 350px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.food-img{
+    position: relative;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.para{
+    margin: 0 auto;
+    text-align: center;
+}
+.order-button{
+    width: 100px;
+    margin: auto auto;
+}
+
+@media screen and (max-width: 760px){
+    .navbar::before{
+        height: 100px;
+    }
+    .navbutton{
+        font-size: 10px;
+    }
+    .navbar li a{
+        padding: 10px;
+    }
+    .container{
+        margin: 15px auto;
+    }
+}
